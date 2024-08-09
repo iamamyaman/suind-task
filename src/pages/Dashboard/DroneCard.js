@@ -10,7 +10,7 @@ import {
 const DroneCard = ({ drone, selected, onClick }) => {
   return (
     <div
-      className={`group w-[49%] h-[350px] min-w-[250px]  p-3 py-4 flex-none relative overflow-hidden flex flex-col gap-1 items-center   ${
+      className={`group w-full md:w-[49%] h-[320px] min-w-[250px]  p-3 py-4 flex-none relative overflow-hidden flex flex-col gap-1 items-center   ${
         selected
           ? "bg-teal-200 border-[1px] border-green-200 shadow-md"
           : "bg-white border-[1px] border-gray-200 shadow-sm"
