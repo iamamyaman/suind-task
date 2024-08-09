@@ -7,6 +7,8 @@ import { userData } from "../../data/userdata";
 import DroneCard from "./DroneCard";
 import ExpandedView from "./ExpandedView";
 import { useNavigate } from "react-router";
+import Avatar from "../../assets/images/avatar.jpg";
+import { TbDrone } from "react-icons/tb";
 
 const Dashboard = ({ isUserAuthenticated, setIsUserAuthenticated }) => {
   console.log(isUserAuthenticated);
@@ -42,9 +44,13 @@ const Dashboard = ({ isUserAuthenticated, setIsUserAuthenticated }) => {
 
       {/* Main Dashboard Area */}
       <div class="p-4 sm:ml-64 bg-gray-50">
-        <h1 className="text-gray-800 font-bold text-2xl mb-4 flex gap-2 items-center ">
+        <h1 className="text-gray-800 font-bold text-2xl mb-4 flex gap-2 items-center px-1">
+          <TbDrone />
           Your Drones
-          <GiDeliveryDrone />
+          <img
+            src={Avatar}
+            className="ml-auto w-10 h-10 rounded-full shadow-md cursor-pointer"
+          />
         </h1>
 
         <div className="flex flex-col md:flex-row gap-3 h-[90vh] overflow-auto md:overflow-hidden ">
